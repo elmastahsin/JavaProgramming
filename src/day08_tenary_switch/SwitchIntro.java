@@ -2,7 +2,24 @@ package day08_tenary_switch;
 
 public class SwitchIntro {
     public static void main(String[] args) {
-
+/*Switch satement: switch, case, default, break
+    syntax:
+        switch(Data/Variable){
+            case data1:
+                Statements;
+                break;
+            case data2:
+                Statements;
+                break;
+            default:
+                Statements;
+        }
+        Switch' expression (Data) can not be boolean, float, double, long
+        Case value must be UNIQUE, and must match with switch expression's data type
+        break: used for exiting the switch
+        default block gets executed if none of the case values matched with swithc' expression
+        or logic we can use it in switch by declaring the case blocks back to back
+*/
         char grade ='Q';
         String result = "";
         switch(grade){ //Faster than if and else
