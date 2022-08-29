@@ -7,19 +7,21 @@ public class DigitLetterSpecialChar {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word");
         String word = input.next();
+        input.close();
 
-        if (word.length() >= 1){
+        if (word.length() >= 1) {
             char f = word.charAt(0);
             if (f >= '0' && f <= '9') {
-                System.out.println( "first character is digit");
+                System.out.println("first character is digit");
             } else if (f >= 'a' && f <= 'z') {
                 System.out.println("first character is lowercase letter");
             } else if (f >= 'A' && f <= 'Z') {
                 System.out.println("first character is uppercase letter");
-            }else {
-                System.out.println("first character is special character");            }
+            } else {
+                System.out.println("first character is special character");
+            }
 
-        }else {
+        } else {
             System.out.println("String is empty.");
         }
     }
