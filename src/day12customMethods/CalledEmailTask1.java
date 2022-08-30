@@ -6,7 +6,13 @@ public class CalledEmailTask1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your email: ");
-
+        String email = input.next();
+        input.close();
+        String firstName = email.substring(0, email.indexOf("_"));
+        String lastName = email.substring(email.indexOf("_") + 1, email.indexOf("@"));
+        String domain = email.substring(email.indexOf("@"));
+        String email2 = lastName + "_" + firstName + domain;
+        System.out.println("email2 = " + email2);
 
     }
 }
