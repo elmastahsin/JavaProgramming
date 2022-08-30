@@ -1,5 +1,6 @@
 package day12_customMethods;
 
+import javax.rmi.ssl.SslRMIClientSocketFactory;
 import java.util.Scanner;
 
 public class CustomMethodPractice {
@@ -14,10 +15,20 @@ public class CustomMethodPractice {
         oddOrEvenOrZero(number);
 
         System.out.println("Enter first number:");
-        int num1 = input.nextInt();
+        double num1 = input.nextDouble();
         System.out.println("Enter second number: ");
-        int num2 = input.nextInt();
+        double num2 = input.nextDouble();
         maxNumber(num1, num2);
+
+        System.out.println("Enter your score:");
+        char score = input.next().toUpperCase().charAt(0);
+        gradeOfStudent(score);
+
+        System.out.println("Enter your firt name:");
+        String firstName = input.next();
+        System.out.println("Enter your last name :");
+        String lastName = input.next();
+        initial(firstName,lastName);
     }
 
     // create a method that can check if a person is eligible to buy alcohol  (age)
@@ -44,7 +55,7 @@ public class CustomMethodPractice {
     }
 
     // create a method that can print the maximum number between two numbers, if both are equal then it prints "Equal", (num1, num2)
-    public static void maxNumber(int num1, int num2) {
+    public static void maxNumber(double num1, double num2) {
         if (num1 > num2) {
             System.out.println(num1 + " is the max number.");
         } else if (num2 > num1) {
@@ -54,16 +65,34 @@ public class CustomMethodPractice {
         }
 
     }
-}
 
+    // create a method that can calculate the grade of the students  (score)
+    public static void gradeOfStudent(char grade) {
+        String result = "";
+        if (grade == 'A') {
+            result = "Excellent";
+        } else if (grade == 'B') {
+            result = "Great Job";
+        } else if (grade == 'C') {
+            result = "Good";
+        } else if (grade == 'D') {
+            result = "Passed";
+        } else {
+            result = "Failed";
+        }
+        System.out.println(result);
+    }
 
-// create a method that can calculate the grade of the students  (score)
-
-
-//Create a method that can display the initials of a person  (firstName, lastName)
-
+    //Create a method that can display the initials of a person  (firstName, lastName)
+    public static void initial(String firstName, String lastName){
+        String initial = firstName.charAt(0) + "." + lastName.charAt(0);
+        System.out.println("initial = " + initial);
+    }
         /*
         firstname = "Cydeo"
         lastname = "School"
         initial ==> C.S
          */
+}
+
+
