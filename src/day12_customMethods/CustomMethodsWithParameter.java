@@ -18,6 +18,7 @@ public class CustomMethodsWithParameter {
             System.out.println(number + " is odd number.");
         }
 
+
     }
 
 }
