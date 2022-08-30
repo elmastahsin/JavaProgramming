@@ -14,6 +14,8 @@ public class CustomMethodIntro {
         System.out.println("**********************");
 
         displayMessage();
+
+
     }
 
     public static void greetings() {
@@ -26,6 +28,10 @@ public class CustomMethodIntro {
         System.out.println("Hello World");
         System.out.println("I love java");
     }
+
+
+
+
 }
 
 /*Custom Methods:
