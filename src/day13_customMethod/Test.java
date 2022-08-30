@@ -12,7 +12,7 @@ public class Test {
 
         //  String word = System.out.println("Hello");
 
-
+        String str = "Java";
     }
 
 }
