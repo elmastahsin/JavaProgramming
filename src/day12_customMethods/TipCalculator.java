@@ -1,4 +1,4 @@
-package day12customMethods;
+package day12_customMethods;
 
 import java.util.Scanner;
 
