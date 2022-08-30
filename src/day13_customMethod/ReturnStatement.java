@@ -3,6 +3,19 @@ package day13_customMethod;
 public class ReturnStatement {
     public static void main(String[] args) {
         eligible(25);
+        System.out.println("------------------------------------");
+
+        System.out.println("Test1 Started");
+
+        boolean exit = true;
+        if(exit){
+            return; // main method gets terminated
+            //    System.out.println("Hello");
+        }
+
+        System.out.println("Test1 Completed");
+
+        System.out.println("Test2 started");
 
     }
 
@@ -19,4 +32,13 @@ public class ReturnStatement {
         }
 
     }
+
+    public static int multification ( int n1 , int n2){
+        int result = n1 * n2 ;
+        return result;
+    }
+
+
+
+
 }
