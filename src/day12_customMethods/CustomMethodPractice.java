@@ -85,7 +85,7 @@ public class CustomMethodPractice {
 
     //Create a method that can display the initials of a person  (firstName, lastName)
     public static void initial(String firstName, String lastName){
-        String initial = firstName.charAt(0) + "." + lastName.charAt(0);
+        String initial = firstName.toUpperCase().charAt(0) + "." + lastName.toUpperCase().charAt(0);
         System.out.println("initial = " + initial);
     }
         /*
