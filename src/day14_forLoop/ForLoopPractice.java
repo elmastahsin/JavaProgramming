@@ -19,7 +19,7 @@ public class ForLoopPractice {
         System.out.println("*************************");
 // print all the alphabet letters A ~ Z
         for (char i = 'A'; i <= 'Z'; i++) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
 
@@ -28,7 +28,7 @@ public class ForLoopPractice {
 // print all the alphabet letters in backwards Z ~ A
 
         for (char i = 'Z'; i >= 'A'; i--) {
-            System.out.println(i + " ");
+            System.out.print(i + " ");
         }
         System.out.println();
 
