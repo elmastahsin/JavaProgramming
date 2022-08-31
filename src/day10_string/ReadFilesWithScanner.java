@@ -1,4 +1,4 @@
-package day10_String;
+package day10_string;
 
 import java.io.IOException;
 import java.nio.file.Path;
