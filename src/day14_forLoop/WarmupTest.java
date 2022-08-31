@@ -8,6 +8,11 @@ public class WarmupTest {
         String s1 = "" + true;
         String s2 = "" + 'e';
         System.out.println("*****************");
+        System.out.println(    sumOf2Numbers(10, 20)   );
+
+        System.out.println( sumOf3Numbers(10, 20, 30) );
+
+        System.out.println( sumOf4Number(10, 20, 30, 40) );
 
     }
 
