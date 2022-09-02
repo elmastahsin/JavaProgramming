@@ -4,23 +4,24 @@ import java.util.Scanner;
 
 public class RemoveDuplicates2 {
     public static void main(String[] args) {
-        String str = "xyzxyzxyz";
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String str = "xyzzzaaaaxyzxyz";
 
         String result = "";
 
-
         for (int i = 0; i < str.length(); i++) {
-
-            if( result.contains( ""+str.charAt(i) )){ // if the character is already contained in new string
-                continue; // skip it
+            if (str.charAt(i) == str.charAt((i+1))){
+                continue;
             }
+            result += "" + str.charAt(i);
 
-            result += str.charAt(i);
 
         }
 
-
-        System.out.println(result);
+        System.out.println("String : " +str);
+        System.out.println("result = " + result);
 
 
 
