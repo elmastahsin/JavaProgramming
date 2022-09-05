@@ -7,12 +7,12 @@ public class RemoveDuplicates2 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter a string:");
-        String str = "xyzzzaaaaxyzxyz";
+        String str = input.next();
 
         String result = "";
 
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == str.charAt((i+1))){
+        for (int i = 1; i <= str.length() - 1; i++) {
+            if (str.charAt(i) == str.charAt((i -1))) {
                 continue;
             }
             result += "" + str.charAt(i);
@@ -20,9 +20,8 @@ public class RemoveDuplicates2 {
 
         }
 
-        System.out.println("String : " +str);
+        System.out.println("String : " + str);
         System.out.println("result = " + result);
-
 
 
     }
