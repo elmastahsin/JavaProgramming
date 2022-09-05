@@ -11,11 +11,13 @@ public class RemoveDuplicates2 {
 
         String result = "";
 
-        for (int i = 1; i <= str.length() - 1; i++) {
-            if (str.charAt(i) == str.charAt((i -1))) {
+        for (int i = 0; i < (str.length() - 1); i++) {
+            char ch = str.charAt(i);
+            char ch2 = str.charAt(i+1);
+            if (ch == ch2) {
                 continue;
             }
-            result += "" + str.charAt(i);
+            result += "" + ch;
 
 
         }
