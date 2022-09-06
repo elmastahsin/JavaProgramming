@@ -14,7 +14,7 @@ public class SimpleCalculator {
             char operator = input.next().charAt(0);
 
             while (!(operator == '+' || operator == '-' || operator == '*' || operator == '/')) {
-                System.out.println("Invalid entry please Enter math operator :");
+                System.err.println("Invalid entry please Enter math operator :");
                 operator = input.next().charAt(0);
             }
             System.out.println("Enter second number: ");
@@ -38,6 +38,10 @@ public class SimpleCalculator {
             System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
             System.out.println("Would you like to continue calculate ? Yes/No");
             answer = input.next().toLowerCase();
+            while (!(answer.equals("yes")||answer.equals("no"))){
+                System.err.println("Invalid entry.Would you like to continue calculate ? Yes/No");
+                answer = input.next().toLowerCase();
+            }
         } while (answer.equals("yes"));
         System.out.println("Have a nice day...");
     }
