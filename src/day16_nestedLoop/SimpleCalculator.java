@@ -45,4 +45,7 @@ public class SimpleCalculator {
         } while (answer.equals("yes"));
         System.out.println("Have a nice day...");
     }
+    public static void method1(){
+        System.out.println("kljlksd");
+    }
 }
