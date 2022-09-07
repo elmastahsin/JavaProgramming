@@ -5,12 +5,14 @@ public class Dog {
     public String breed;
     public int age;
     public String size;
+    public char gender;
     public String color;
 
-    public void eat(){
+    public void eat() {
         System.out.println(name + "is eating");
     }
-    public void drink(){
+
+    public void drink() {
         System.out.println(name + " is drinking water");
     }
 
