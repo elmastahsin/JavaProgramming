@@ -19,6 +19,17 @@ public class BankAccount {
                 ", balance=" + balance +
                 '}';
     }
+
+    public void checkBalance(){
+        System.out.println("Your available balance is: $"+balance);
+    }
+    public void deposit(double amount){
+        balance+=amount;
+
+    }
+    public void withdraw(double amount){
+balance -= amount;
+    }
 }
 /*2. Create a custom class named BankAccount:
 			Attributes:
