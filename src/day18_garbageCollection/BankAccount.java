@@ -42,7 +42,6 @@ public class BankAccount {
         System.out.println("Withdrawing $"+amount +" from "+accountHolder);
         balance -= amount;
     }
-    }
 }
 /*2. Create a custom class named BankAccount:
 			Attributes:
