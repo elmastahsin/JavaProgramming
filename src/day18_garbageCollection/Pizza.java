@@ -11,15 +11,15 @@ public class Pizza {
         switch (size) {
             case 'S':
             case 's':
-                total = 10 + 2 * (numberOfCheeseTopping+numberOfPepperoniTopping);
+                total = 10 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                 break;
             case 'M':
             case 'm':
-                total = 12 + 2 *(numberOfCheeseTopping+numberOfPepperoniTopping) ;
+                total = 12 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                 break;
             case 'L':
             case 'l':
-                total = 14 + 2 * (numberOfCheeseTopping+numberOfPepperoniTopping) ;
+                total = 14 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                 break;
             default:
                 System.err.println("Invalide size : " + size);
@@ -36,4 +36,19 @@ public class Pizza {
                 ", totalPrice=" + calcCost() +
                 '}';
     }*/
+    public void setInfo(char size, int numberOfCheeseTopping,int numberOfPepperoniTopping) {
+        this.size = size;
+        this.numberOfPepperoniTopping = numberOfPepperoniTopping;
+        this.numberOfCheeseTopping = numberOfCheeseTopping;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "size=" + size +
+                ", numberOfCheeseTopping=" + numberOfCheeseTopping +
+                ", numberOfPepperoniTopping=" + numberOfPepperoniTopping +
+                '}';
+    }
 }
