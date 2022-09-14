@@ -1,4 +1,4 @@
-package day17_customMethod;
+package day17_customClass;
 
 public class Dog {
     public String name;// instance variables

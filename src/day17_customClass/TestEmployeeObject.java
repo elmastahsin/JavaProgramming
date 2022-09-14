@@ -1,4 +1,4 @@
-package day17_customMethod;
+package day17_customClass;
 
 public class TestEmployeeObject {
     public static void main(String[] args) {
