@@ -25,7 +25,7 @@ public class ArraysIntro {
         // scores[5] = 100;
         //  scores[-1] = 65;
         //   scores = new int[10]; //index: 0 ~ 9
-        //  scores = new int[50]; //index: 0 ~ 49
+        //   scores = new int[50]; //index: 0 ~ 49
 
         System.out.println(Arrays.toString(scores));
 
