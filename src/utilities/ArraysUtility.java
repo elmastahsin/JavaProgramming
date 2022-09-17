@@ -15,6 +15,7 @@ public class ArraysUtility {
 
         return arr3;
     }
+
     public static double[] merge(double[] arr1, double[] arr2) {
 
 
@@ -29,6 +30,7 @@ public class ArraysUtility {
 
         return arr3;
     }
+
     public static char[] merge(char[] arr1, char[] arr2) {
 
 
@@ -43,6 +45,7 @@ public class ArraysUtility {
 
         return arr3;
     }
+
     public static String[] merge(String[] arr1, String[] arr2) {
 
 
@@ -56,5 +59,43 @@ public class ArraysUtility {
         }
 
         return arr3;
+    }
+
+    public static int[] reverse(int[] array) {
+
+        int[] reverse = new int[array.length]; // {5, 4, 3, 2, 1}
+
+        for (int i = array.length - 1, j = 0; i >= 0; i--, j++) {
+            reverse[j] = array[i];
+        }
+        return reverse;
+    }
+
+    public static double[] reverse(double[] array) {
+
+        double[] reverse = new double[array.length]; // {5, 4, 3, 2, 1}
+
+        for (int i = array.length - 1, j = 0; i >= 0; i--, j++) {
+            reverse[j] = array[i];
+        }
+        return reverse;
+    }
+    public static char[] reverse(char[] array) {
+
+        char[] reverse = new char[array.length]; // {5, 4, 3, 2, 1}
+
+        for (int i = array.length - 1, j = 0; i >= 0; i--, j++) {
+            reverse[j] = array[i];
+        }
+        return reverse;
+    }
+    public static String[] reverse(String[] array) {
+
+        String[] reverse = new String[array.length]; // {5, 4, 3, 2, 1}
+
+        for (int i = array.length - 1, j = 0; i >= 0; i--, j++) {
+            reverse[j] = array[i];
+        }
+        return reverse;
     }
 }
