@@ -1,5 +1,7 @@
 package day20_foreach;
 
+import utilities.ArraysUtility;
+
 import java.util.Arrays;
 
 public class StringMethods {
@@ -19,6 +21,23 @@ public class StringMethods {
         String[] words = str2.split(" ");
 
         System.out.println(Arrays.toString(words));
+
+        System.out.println("-------------------------------------");
+
+        String sentence = "I love Java";
+
+        String[] arr = (ArraysUtility.reverse(sentence.split(" ")));
+
+        System.out.println(Arrays.toString(arr));
+
+        String reverseSentence = "";
+        for (int i = 0; i < arr.length; i++) {
+            reverseSentence += arr[i] + " ";
+
+        }
+
+        System.out.println(reverseSentence);
+
 
 
 
