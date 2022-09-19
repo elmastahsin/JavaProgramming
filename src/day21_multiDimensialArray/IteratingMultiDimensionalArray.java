@@ -22,7 +22,17 @@ public class IteratingMultiDimensionalArray {
                 System.out.println(i);
             }
         }
+        System.out.println("----------------------------");
 
-
+        for (int i = array2D.length - 1; i >= 0; i--) {
+            for (int j = array2D[i].length - 1; j >= 0; j--) {
+                System.out.println(array2D[i][j]);
+            }
+        }
+        for (int[] each : array2D) {
+            for (int eachArray : each) {
+                System.out.println(eachArray);
+            }
+        }
     }
 }
