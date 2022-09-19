@@ -1,4 +1,4 @@
-package day21_multiDimesionalArray;
+package day21_multiDimensialArray;
 
 import java.util.Arrays;
 
@@ -25,6 +25,8 @@ public class MultiDimensionalArrayIntro {
         System.out.println(Arrays.toString(array2D[2]));
         System.out.println(array2D[2][0]);
         System.out.println(array2D[2][1]);
+
+
 
 
 
