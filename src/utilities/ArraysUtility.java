@@ -133,7 +133,6 @@ public class ArraysUtility {
             if (array[i] == element) {
                 isContains = true;
             }
-
         }
         return isContains;
     }
