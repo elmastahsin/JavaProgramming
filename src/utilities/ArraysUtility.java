@@ -136,4 +136,40 @@ public class ArraysUtility {
         }
         return isContains;
     }
+    public static boolean contains(String[] array, String element) {
+        boolean isContains = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(element)) {
+                isContains = true;
+            }
+        }
+        return isContains;
+    }
+    public static boolean contains(double[] array, double element) {
+        boolean isContains = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element) {
+                isContains = true;
+            }
+        }
+        return isContains;
+    }
+    public static boolean contains(char[] array, char element) {
+        boolean isContains = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element) {
+                isContains = true;
+            }
+        }
+        return isContains;
+    }
+/*
+    public static int [] remove (int[] array, int index){
+
+    }
+
+    public static int [] removeDuplicates(int[] array){
+
+    }
+    */
 }
