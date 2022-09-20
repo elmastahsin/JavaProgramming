@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.Arrays;
+
 public class ArraysUtility {
     public static int[] merge(int[] arr1, int[] arr2) {
 
@@ -80,6 +82,7 @@ public class ArraysUtility {
         }
         return reverse;
     }
+
     public static char[] reverse(char[] array) {
 
         char[] reverse = new char[array.length]; // {5, 4, 3, 2, 1}
@@ -89,6 +92,7 @@ public class ArraysUtility {
         }
         return reverse;
     }
+
     public static String[] reverse(String[] array) {
 
         String[] reverse = new String[array.length]; // {5, 4, 3, 2, 1}
@@ -97,5 +101,40 @@ public class ArraysUtility {
             reverse[j] = array[i];
         }
         return reverse;
+    }
+
+    public static int[] addElement(int[] array, int element) {
+        int[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element;
+        return newArray;
+    }
+
+    public static double[] addElement(double[] array, double element) {
+        double[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element;
+        return newArray;
+    }
+
+    public static char[] addElement(char[] array, char element) {
+        char[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element;
+        return newArray;
+    }
+
+    public static String[] addElement(String[] array, String element) {
+        String[] newArray = Arrays.copyOf(array, array.length + 1);
+        newArray[newArray.length - 1] = element;
+        return newArray;
+    }
+
+    public static boolean contains(int[] array, int element) {
+        boolean isContains = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element) {
+                isContains = true;
+            }
+
+        }
+        return isContains;
     }
 }
