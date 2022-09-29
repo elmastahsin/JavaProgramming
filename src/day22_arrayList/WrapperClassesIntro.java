@@ -1,8 +1,6 @@
 package day22_arrayList;
 
 
-import day17_customClass.Dog;
-
 public class WrapperClassesIntro {
     public static void main(String[] args) {
 
