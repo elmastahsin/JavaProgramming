@@ -33,7 +33,18 @@ public class ArrayListMethods {
         groceriesList.remove("paper Towels");
         System.out.println(groceriesList);
 
+        System.out.println("---------------------------");
 
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10); // 1
+        numbers.add(20); // 2
+        numbers.add(30); // 3
+        numbers.add(40); // 4
+        numbers.add(50); // 5
+
+        numbers.remove(Integer.valueOf(20));
+
+        System.out.println(numbers);
 
     }
 }
