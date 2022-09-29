@@ -15,7 +15,7 @@ warmup tasks
 			array = { {100, 20, 300}, {10, 1000, 50}, {-200, 400, 0} };
 
 			output:
-				Minimum number is: -200
+				Minimum numbe r is: -200
 				Maximum number is: 1000
 
 
