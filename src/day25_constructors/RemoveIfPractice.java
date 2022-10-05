@@ -1,6 +1,10 @@
 package day25_constructors;
 
 import day17_customClass.Dog;
+import day23_arrayList.ArrayArrayListConversion;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class RemoveIfPractice {
     public static void main(String[] args) {
@@ -12,17 +16,74 @@ public class RemoveIfPractice {
         dogs[4].setInfo("Bella", "Bichon Frise", 'F', 3, "Small", "White");
         dogs[5].setInfo("Loki", "Chow Chow", 'M', 7, "Medium", "Gold");
 
+     /*   ArrayList<Dog> smallDog= new ArrayList<>();
+        for (Dog each : dogs) {
+            if (each.size.equals("Small")){
+                smallDog.add(each);
+            }
+        }
+        System.out.println(smallDog);*/
+        ArrayList<Dog> smallDog = new ArrayList<>(Arrays.asList(dogs));
+        smallDog.removeIf(p -> !(p.size.equalsIgnoreCase("Small")));
+        System.out.println(smallDog);
+        System.out.println("****************************************************");
+
+        ArrayList<Dog> youngDog = new ArrayList<>(Arrays.asList(dogs));
+        youngDog.removeIf(p -> p.age > 4);
+        System.out.println(youngDog);
+        System.out.println("****************************************************");
+
+        ArrayList<Dog> femaleDog = new ArrayList<>(Arrays.asList(dogs));
+        femaleDog.removeIf(p -> p.gender == 'M');
+        System.out.println(femaleDog);
+
+        ArrayList<Dog> maleDog = new ArrayList<>(Arrays.asList(dogs));
+        maleDog.removeIf(p -> p.gender == 'F');
+
+
+        System.out.println(maleDog);
+
+
+        System.out.println("-----------------------------");
+        Dog[] dogs2 = {new Dog(), new Dog(), new Dog(), new Dog(), new Dog(), new Dog()};
+        dogs2[0].setInfo("Max", "Husky", 'M', 4, "Medium", "Gray");
+        dogs2[1].setInfo("Chloe", "Golden Retriever", 'F', 8, "Large", "Gold");
+        dogs2[2].setInfo("Molly", "Beagle", 'F', 5, "Small", "White");
+        dogs2[3].setInfo("Oliver", "Bulldog", 'M', 2, "Small", "Black");
+        dogs2[4].setInfo("Bella", "Bichon Frise", 'F', 3, "Small", "White");
+        dogs2[5].setInfo("Loki", "Chow Chow", 'M', 7, "Medium", "Gold");
+        System.out.println(Arrays.toString(dogs2));
+
+        System.out.println("**********");
+        ArrayList<Dog> list = new ArrayList<>(Arrays.asList(dogs2));
+        list.removeIf(p -> p.size.equalsIgnoreCase("small"));
+
+        dogs2 = list.toArray(new Dog[0]);
+        System.out.println(Arrays.toString(dogs2));
+
     }
 }
-/* Note: Employee class is imported from day17 package
+/* Note: Dog class is imported from package day17
 
-	        1.1 Write a program that can display the name and job title of each employee
+        1.1 Create an arrayList named smallDogs, and add all the dog objects with the
+        size of small from the dogs array to smallDogs arrayList
 
-	        1.2 Write a program that can display the names of "Java Developers"
+            Note: DO NOT use any loops
 
-	        1.3 Write a progam that can display the maximum and minimum salary
+	    1.2 Create an arrayList named youngDogs, and add all the dog objects with the
+	    age of 4 or less from the dogs array to youngDogs arrayList
 
-	        1.4 Create two arraylists named femaleEmployees and maleEmployees, write a program that
-	         can add all the female employees and male emloyees to the femaleEmployees and maleEmployees arraylists
+	            Note: DO NOT use any loops
+
+	    1.3 Create an arrayList named femaleDogs,
+	    and add all the dog objects with the gender of 'F' the dogs array to femaleDogs arrayList
+
+	            Note: DO NOT use any loops
+
+	    1.4 Create an arrayList named maleDogs, and add all the dog objects with
+	     the gender of 'M' the dogs array to maleDogs arrayList
+
+	            Note: DO NOT use any loops
+
 
 */
