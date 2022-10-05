@@ -1,5 +1,6 @@
 package day25_constructors;
 
+import java.io.FilterOutputStream;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -11,5 +12,9 @@ public class LocalDateTimeIntro {
 
         LocalDateTime ends = LocalDateTime.of(2023,5,25, 11,0);
         System.out.println(ends);
+
+        System.out.println(starts.getDayOfWeek());
+
+        System.out.println(starts.getHour());
     }
 }
