@@ -30,5 +30,14 @@ public class DateTimeFormatterIntro {
 
         System.out.println(starts.format(dtf ));
 
+
+        System.out.println("-----------------------------");
+        DateTimeFormatter dtfe = DateTimeFormatter.ofPattern("EEEE, h:mm a, MMM/dd/y");
+
+        LocalDateTime myDateTime = LocalDateTime.of(2020,11,24,13,00);
+        System.out.println(myDateTime.format(dtfe));
+
+        //1. use the LocalDateTime get the date and time in the following format:
+      //  Tuesday, 1:00 pm, Nov/24/2020
     }
 }
