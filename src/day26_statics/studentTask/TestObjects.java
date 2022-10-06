@@ -10,14 +10,37 @@ public class TestObjects {
         Student student4 = new Student("Mehmet", 25, 'M', "D43");
         Student student5 = new Student("Sebastian", 23, 'M', "E27");
 
+        Student [] students = {student2,student3,student4,student5};
+
+
         StudentsGroup group1 = new StudentsGroup("Java Turtles",1);
         System.out.println(group1);
         group1.addStudent(student1);
-        group1.addStudent(student2);
-        group1.addStudent(student3);
-        group1.addStudent(student4);
-        group1.addStudent(student5);
 
+        group1.addStudent(students);
+
+        group1.addStudent("Khashayar",34,'M',"F35");
+
+        System.out.println(group1);
+
+        group1.removeStudent("D43");
+        group1.removeStudent("E27");
+
+        for (Student each: group1.students) {
+
+            System.out.println(each.name + " : " + each.studentID);
+
+        }
+
+        System.out.println("----------------------");
+
+        StudentsGroup group2 = new StudentsGroup("Java Turtles",1);
+
+        StudentsGroup group3 = new StudentsGroup("Java Turtles",1);
+
+        StudentsGroup group4 = new StudentsGroup("Java Turtles",1);
+
+StudentsGroup[] groups = {group2,group3,group4};
 
 
 
