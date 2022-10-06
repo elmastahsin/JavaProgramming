@@ -38,23 +38,5 @@ public class Student {
                 study()
                 toString()
 
-	2. Create a custom class named StudentsGroup
-	            Attributes:
-	                groupName, groupId, students (ArrayList<Students>)
-
-	            Add a constructor that can set the groupId and groupName
-	                    initialize students arraylist in the constrcutor's body
-
-	            Methods:
-	                addStudent(Student): adds the specified student to the students arrayList
-
-	                removeStudent(id): removes the student with the specified id from the students arraylist
-
-	                toString(): displays the groupName, groupId and total number of students when a group object is passed in the print statement
-
-	3. Create a class named TestObjects
-	            3.1 Create 5 Student objects
-	            3.2 Create a StudentGroup object
-	            3.3 Add all the student objets to the StudentsGroup object' students list
 
 */
