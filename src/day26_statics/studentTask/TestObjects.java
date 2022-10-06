@@ -10,23 +10,23 @@ public class TestObjects {
         Student student4 = new Student("Mehmet", 25, 'M', "D43");
         Student student5 = new Student("Sebastian", 23, 'M', "E27");
 
-        Student [] students = {student2,student3,student4,student5};
+        Student[] students = {student2, student3, student4, student5};
 
 
-        StudentsGroup group1 = new StudentsGroup("Java Turtles",1);
+        StudentsGroup group1 = new StudentsGroup("Java Turtles", 1);
         System.out.println(group1);
         group1.addStudent(student1);
 
         group1.addStudent(students);
 
-        group1.addStudent("Khashayar",34,'M',"F35");
+        group1.addStudent("Khashayar", 34, 'M', "F35");
 
         System.out.println(group1);
 
         group1.removeStudent("D43");
         group1.removeStudent("E27");
 
-        for (Student each: group1.students) {
+        for (Student each : group1.students) {
 
             System.out.println(each.name + " : " + each.studentID);
 
@@ -34,17 +34,30 @@ public class TestObjects {
 
         System.out.println("----------------------");
 
-        StudentsGroup group2 = new StudentsGroup("Java Turtles",1);
+        StudentsGroup group2 = new StudentsGroup("Java & Blues", 1);
 
-        StudentsGroup group3 = new StudentsGroup("Java Turtles",1);
+        StudentsGroup group3 = new StudentsGroup("Java Black", 1);
 
-        StudentsGroup group4 = new StudentsGroup("Java Turtles",1);
+        StudentsGroup group4 = new StudentsGroup("Java Red", 1);
 
-StudentsGroup[] groups = {group2,group3,group4};
+        StudentsGroup[] groups = {group1, group2, group3, group4};
+        group2.addStudent(student3);
+        group2.addStudent(students);
+        group3.addStudent(student3);
+        group4.addStudent(student4);
+        group4.addStudent(student5);
+        group3.addStudent(student2);
 
+        group3.addStudent(students);
+        group3.removeStudent(student1.studentID);
+        group2.removeStudent(student3.studentID);
+        group4.removeStudent(student5.studentID);
 
+        for (StudentsGroup eachGroup : groups) {
 
+            System.out.println(eachGroup.groupName + " : " + eachGroup.students);
 
+        }
 
 
 
