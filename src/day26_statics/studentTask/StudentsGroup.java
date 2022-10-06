@@ -1,6 +1,7 @@
 package day26_statics.studentTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StudentsGroup {// StudentsGroup HAS A Student
     public String groupName;
@@ -16,7 +17,9 @@ public class StudentsGroup {// StudentsGroup HAS A Student
     public void addStudent(Student student) {// takes one student object and adds ,t to the arrayList of students
         students.add(student);
     }// Takes one array of students, and adds the array of students to the arraylist of students
-
+public void addStudent( Student [] students){
+        this.students.addAll(Arrays.asList(students));
+}
     public void addStudent(String name, int age, char gender, String studentID) {
 
         //      Student student = new Student(name,age,gender,studentID);
@@ -34,6 +37,7 @@ public class StudentsGroup {// StudentsGroup HAS A Student
         return "StudentsGroup{" +
                 "groupName='" + groupName + '\'' +
                 ", groupID=" + groupID +
+                ", number of students= " + students.size() +
                 '}';
     }
 }
