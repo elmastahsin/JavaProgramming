@@ -1,4 +1,6 @@
-package day27_accessModifers;
+package day27_accessModifiers;
+
+import day27_accessModifiers.Circle;
 
 public class TestCircleObjects {
     public static void main(String[] args) {

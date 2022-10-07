@@ -1,4 +1,4 @@
-package day27_accessModifers;
+package day27_accessModifiers;
 
 public class Circle {
     public double radius, diameter;
