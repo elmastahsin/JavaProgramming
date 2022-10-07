@@ -9,16 +9,16 @@ public class Circle {
         diameter = radius * 2;
     }
 
-    public double calcArea(double radius, double pi) {
+    public double calcArea() {
         return radius * radius * pi;
     }
 
-    public double calcPerimeter(double radius, double pi) {
-        return 2 * radius * pi;
+    public double calcPerimeter() {
+        return diameter * pi;
     }
 
-    public void printPi(double pi) {
-        System.out.println(pi);
+    public static void printPiValue() {
+        System.out.println("PI value is " + pi);
     }
 
     @Override
@@ -26,9 +26,9 @@ public class Circle {
         return "Circle{" +
                 "radius=" + radius +
                 ", diameter=" + diameter +
-                ", pi =" + pi +
-                ", area=" + calcArea(radius, pi) +
-                ", perimeter=" + calcPerimeter(radius, pi) +
+                ", PI =" + pi +
+                ", area=" + calcArea() +
+                ", perimeter=" + calcPerimeter() +
                 '}';
     }
 }
