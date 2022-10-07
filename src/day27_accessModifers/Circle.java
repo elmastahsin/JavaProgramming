@@ -6,6 +6,7 @@ public class Circle {
 
     public Circle(double radius) {
         this.radius = radius;
+        diameter = radius * 2;
     }
 
     public double calcArea(double radius, double pi) {
