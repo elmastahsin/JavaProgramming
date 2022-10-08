@@ -5,21 +5,18 @@ public class Person {
     public int age;
     public char gender;
     public static String planet;
-
+    public static boolean isHuman;
     public static boolean hasNose;
     public static int numberOfWings;
     public static int numberOfHead;
-    public static boolean isHuman;
 
     public Person(String name) {
         this.name = name;
     }
-
     public Person(String name, int age) {
         this(name);
         this.age = age;
     }
-
     public Person(String name, String language) {
         this(name);
         this.language = language;
@@ -34,6 +31,7 @@ public class Person {
 
     public Person(String name, int age, char gender) {
         this(name, age);
+        //this(name,gender);
         this.gender = gender;
     }
 
