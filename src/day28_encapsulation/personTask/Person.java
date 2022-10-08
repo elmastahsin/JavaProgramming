@@ -51,7 +51,7 @@ public class Person {
     }
 
     public static void printPlanetName() {
-        System.out.println(planet);
+        System.out.println("Planet name is " + planet);
     }
 
     public void eat(String food) {
@@ -66,9 +66,11 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", language='" + language + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
+                ", language='" + language + '\'' +
+                ", planet='" + planet + '\'' +
+
                 '}';
     }
 }
