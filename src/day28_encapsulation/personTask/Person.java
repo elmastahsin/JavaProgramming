@@ -13,10 +13,12 @@ public class Person {
     public Person(String name) {
         this.name = name;
     }
+
     public Person(String name, int age) {
         this(name);
         this.age = age;
     }
+
     public Person(String name, String language) {
         this(name);
         this.language = language;
@@ -35,7 +37,7 @@ public class Person {
         this.gender = gender;
     }
 
-    public Person(String name, String language, int age, char gender) {
+    public Person(String name, int age, char gender, String language) {
         this(name, age, gender);
         this.language = language;
 
@@ -51,7 +53,7 @@ public class Person {
     }
 
     public static void printPlanetName() {
-        System.out.println("Planet name is " + planet);
+        System.out.println("Planet name is: " + planet);
     }
 
     public void eat(String food) {
