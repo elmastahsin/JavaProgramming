@@ -14,10 +14,10 @@ public class StaticInitializationBlock {
 
 
     }
-
+/*
     public static void main(String[] args) {
         a = 100;
         b = 20.5;
         c = "Java";
-    }
+    }*/
 }
