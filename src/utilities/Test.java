@@ -1,5 +1,6 @@
 package utilities;
 
+import day27_accessModifiers.AccessModifiers;
 import day27_accessModifiers.Data;
 
 public class Test {
@@ -18,5 +19,20 @@ public class Test {
         System.out.println(obj.b);
         System.out.println(obj.c);
 
+
+        System.out.println("---------------------");
+
+        System.out.println(AccessModifiers.publicData);// public is always accessible in different packages
+
+        // System.out.println(AccessModifiers.protectedData);// protected is not always accessible in different packages
+        // System.out.println(AccessModifiers.defaultData);// default is not accessible in different packages
+        // System.out.println(AccessModifiers.privateData);// private is never accessible in different packages
+
+        new AccessModifiers();
+
+        AccessModifiers.publicMethod();
+     //   AccessModifiers.defaultMethod();
+       // AccessModifiers.protectedMethod();
+        //AccessModifiers.privateMethod();
     }
 }
