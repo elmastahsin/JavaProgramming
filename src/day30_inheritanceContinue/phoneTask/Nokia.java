@@ -7,6 +7,7 @@ public class Nokia extends Phone{
         super("Nokia", model, size, price, color);
     }
     public void selfDefense(){
+        System.out.println(getBrand() + " " + getModel() + " can be used for self defenses");
 
     }
 }

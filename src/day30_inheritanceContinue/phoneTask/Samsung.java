@@ -8,7 +8,7 @@ public class Samsung extends Phone {
     }
 
     public void freeze(){
-        System.out.println(getBrand() + " " + getBrand() + " freezes a lot");
+        System.out.println(getBrand() + " " + getModel() + " freezes a lot");
     }
 }
 /*	2.2 Samsung:
