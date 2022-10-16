@@ -10,8 +10,6 @@ public class Phone {
     private double price;
     private String color;
 
-
-
     public String getBrand() {
         return brand;
     }
@@ -62,6 +60,33 @@ public class Phone {
             System.exit(1);
         }
     }
+
+    public Phone(String brand, String model, String size, double price, String color) {
+        setBrand(brand);
+        setModel(model);
+        setSize(size);
+        setPrice(price);
+        setColor(color);
+    }
+
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +"{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", size='" + size + '\'' +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
+    public void call(long phoneNumber){
+        System.out.println(phoneNumber + "is calling");
+    }
+    public void text(long phoneNumber){
+        System.out.println(phoneNumber + "is texting");
+    }
 }
 /*Warmup tasks:
 	1. Create a named Phone:
@@ -80,20 +105,5 @@ public class Phone {
 					call(long phoneNumber)
 					text(long phoneNumber)
 					toString()
-
-	2. Create the following sub classes of Phone:
-
-			2.1 Iphone:
-					Extra methods:
-						faceTime(phoneNumber)
-						faceTile(email)
-
-			2.2 Samsung:
-					Extra methods:
-						freeze()
-
-			2.3 Nokia:
-					Extra methods:
-						selfDefense()
 
 */
