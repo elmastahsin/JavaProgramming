@@ -61,7 +61,7 @@ public class Phone {
         }
     }
 
-    public Phone(String brand, String model, String size, double price, String color) {
+    public Phone(String brand, String model, String size, String color, double price) {
         setBrand(brand);
         setModel(model);
         setSize(size);
@@ -82,10 +82,10 @@ public class Phone {
     }
 
     public void call(long phoneNumber){
-        System.out.println(phoneNumber + "is calling");
+        System.out.println(phoneNumber + " is calling");
     }
     public void text(long phoneNumber){
-        System.out.println(phoneNumber + "is texting");
+        System.out.println(phoneNumber + " is texting");
     }
 }
 /*Warmup tasks:

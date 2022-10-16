@@ -3,8 +3,8 @@ package day30_inheritanceContinue.phoneTask;
 public class IPhone extends Phone { // Iphone is a phone
 
 
-    public IPhone(String model, String size, double price, String color) {
-        super("Apple", model, size, price, color);
+    public IPhone( String model, String size, String color, double price) {
+        super("Apple", model, size, color, price);
     }
 
     public static boolean hasApplePay = true;
