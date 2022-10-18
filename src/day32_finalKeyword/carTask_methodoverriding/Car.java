@@ -1,7 +1,7 @@
 package day32_finalKeyword.carTask_methodoverriding;
 
 public class Car {
-    private String make,model,color;
+    private String make, model, color;
     private int year;
     private double price;
 
@@ -51,7 +51,7 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if (year<=0){ // if specified year is negative or zero
+        if (year <= 0) { // if specified year is negative or zero
             System.err.println("Invalid year: " + year);
             System.exit(1);// terminates the program
         }
@@ -63,11 +63,26 @@ public class Car {
     }
 
     public void setPrice(double price) {
-        if (price<=0){// if specified year is negative or zero
+        if (price <= 0) {// if specified year is negative or zero
             System.err.println("Invalid price: " + price);
             System.exit(1);// terminates the program
         }
         this.price = price;
+    }
+
+    public void start() {
+        System.out.println("Press the brake and twist the key to ignition to start " + make + " " + model);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
 }
 /*
