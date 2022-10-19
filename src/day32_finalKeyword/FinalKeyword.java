@@ -10,7 +10,7 @@ class CydeoStudent {
 }
 
 
-public  class FinalKeyword extends CydeoStudent {
+public class FinalKeyword extends CydeoStudent {
     /*@Override
     public void language() { // final method can never be overridden
         System.out.println("Pyhton Programming");
@@ -39,6 +39,19 @@ public  class FinalKeyword extends CydeoStudent {
 
         new CydeoStudent().language();
         new FinalKeyword().language();
+
+
+        System.out.println("--------------------");
+
+
+        final String name = "James"; // if you want to don't be eligible for garbage collection;
+
+        //    name = null // makes String object eligible for garbage collection;
+
+        //name = "Daniel"; // makes "James" oblet eligible for garbage collection;
+
+        System.out.println(name);
+
 
     }
 }
