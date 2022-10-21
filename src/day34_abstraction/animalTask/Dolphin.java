@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements Playable{
     public Dolphin(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -17,6 +17,11 @@ public class Dolphin extends Animal{
     @Override
     public void sleep() {
         System.out.println("Dolphin " + getName() + " is sleeping 8 hours" );
+
+    }
+
+    @Override
+    public void play() {
 
     }
 }

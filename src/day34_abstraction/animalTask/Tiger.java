@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Tiger extends Animal{
+public class Tiger extends Animal implements Wild{
     public Tiger(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -21,6 +21,11 @@ public class Tiger extends Animal{
     public void sleep() {
         System.out.println("Tiger " + getName() + " is sleeping 5 hours ");
 
+
+    }
+
+    @Override
+    public void hunt() {
 
     }
 }

@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Eagle extends Animal implements Flyable{
+public class Eagle extends Animal implements Flyable, Wild{
     @Override
     public void fly() {
 
@@ -26,6 +26,11 @@ public class Eagle extends Animal implements Flyable{
     public void sleep() {
         System.out.println("Eagle " + getName() + " is sleeping 5 hours ");
 
+
+    }
+
+    @Override
+    public void hunt() {
 
     }
 }
