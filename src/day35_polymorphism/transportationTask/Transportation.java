@@ -77,17 +77,4 @@ public abstract class Transportation {
 				non abstract methods:
 					stop(): "Shut off the engine"
 					toString()
-
-
-
-
-
-
-	7. Create a sub class of car named Audi that implements AutoPark
-
-
-	8. Create a sub class of Car named Tesla that implements AutoPark, AutoPilot and Electric
-
-
-
 */

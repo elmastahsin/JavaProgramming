@@ -5,17 +5,9 @@ public abstract class Car extends Transportation{
         super(make, model, color, year, price);
     }
 
-    @Override
-    public void transportPeople() {
-
+    public void drive(){
+        System.out.println("Driving "+getMake()+" "+getModel());
     }
-
-    @Override
-    public void start() {
-
-    }
-
-    public abstract void drive();
 }
 /*	5. Create an abstract subclass of Transportation named Car
 
