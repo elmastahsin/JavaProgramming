@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Dolphin extends Animal implements Playable{
+public class Dolphin extends Animal implements Playable, Swimmable{
     public Dolphin(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -22,6 +22,11 @@ public class Dolphin extends Animal implements Playable{
 
     @Override
     public void play() {
+
+    }
+
+    @Override
+    public void swim() {
 
     }
 }
