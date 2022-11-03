@@ -5,8 +5,5 @@ public class EscapeSequencesPractice {
 
         System.out.println("My favorite programming language is \"Java\".\n\tJava is an \"Object Oriented\" programming language.");
 
-
-
-
     }
 }
