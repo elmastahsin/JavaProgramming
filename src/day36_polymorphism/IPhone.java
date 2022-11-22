@@ -96,16 +96,11 @@ public class IPhone {
 
 
         if( model.equals(  ( (IPhone)obj ).model ) ){ // if the model of the Iphone is equal to the given Iphone' model
-          /*
-            if(color.equals( ( (IPhone)obj ).color  )   ){ // if the color of the Iphone is equal to the given iphone' color
+            /*if(color.equals( ( (IPhone)obj ).color  )   ){ // if the color of the Iphone is equal to the given iphone' color
                 return true;
-            }
-           */
-
+            }*/
             return true;
         }
-
-
         return false;
     }
 

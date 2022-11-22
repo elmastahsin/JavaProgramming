@@ -84,7 +84,8 @@ OOP Polymorphsim: parent type being referenced to the child object
 
 
 Runtime polymorphism (dynamic polymorphism): method overriding
-										one method with multiple implementations (revealed during the run time)
+
+			one method with multiple implementations (revealed during the run time)
 
 
 										eat():

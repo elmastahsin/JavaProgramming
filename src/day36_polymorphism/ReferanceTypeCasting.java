@@ -6,9 +6,10 @@ import day30_inheritanceContinue.phoneTask.IPhone;
 import day30_inheritanceContinue.phoneTask.Nokia;
 import day30_inheritanceContinue.phoneTask.Phone;
 import day30_inheritanceContinue.phoneTask.Nokia;
-import day33_abstraction.employeeTask.Developer;
-import day33_abstraction.employeeTask.Driver;
-import day33_abstraction.employeeTask.Employee;
+import day33_abstraction.employeeTask.*;
+import day35_polymorphism.transportationTask.AutoPilot;
+import day35_polymorphism.transportationTask.Electric;
+import day35_polymorphism.transportationTask.Tesla;
 
 import java.sql.SQLOutput;
 import java.util.function.DoubleFunction;
@@ -49,7 +50,30 @@ public class ReferanceTypeCasting {
 
       //  Driver driver = (Driver)employee;
 
+        System.out.println("--------------------------------------------------");
+        Electric electric = new Tesla("Tesla", "Model Y","Blue", 2020,55000);
 
+        electric.charge();
+        ((Tesla)electric).autoPark();
+        ((AutoPilot)electric).selfDrive();
+
+        System.out.println("--------------------------------------------------");
+
+
+        System.out.println("-------------------------------------------------------------");
+
+        Employee employee1 = new Teacher( "James", 45,  'M', "B1", "Math Teacher", 75000);
+
+        Employee employee2 = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+        Employee employee3 = new Driver("Aaron", 48, 'M', "D1", "Truck Driver", 90000);
+
+        Employee employee4 = new Tester("Emily", 35, 'F', "E1", "Manual Tester", 80000);
+
+        employee1.work();
+        employee2.work();
+        employee3.work();
+        employee4.work();
 
 
     }

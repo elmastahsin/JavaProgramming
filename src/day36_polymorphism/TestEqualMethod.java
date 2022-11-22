@@ -9,5 +9,15 @@ public class TestEqualMethod {
         //  System.out.println(circle1.equals("Java")); // System exit 1// False
         System.out.println(circle1.equals(circle2)); // TRUE
         System.out.println(circle1.equals(circle3)); // False
+
+        System.out.println("----------------------------------------------------------");
+
+        IPhone iphone1 = new IPhone("Apple", "Iphone 12", "Medium", "Red", 900);
+
+        IPhone iphone2 = new IPhone("Apple", "Iphone 12", "Medium", "White", 900);
+
+
+        System.out.println( iphone1.equals(iphone2) );
+
     }
 }
