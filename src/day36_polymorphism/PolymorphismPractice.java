@@ -1,13 +1,19 @@
 package day36_polymorphism;
 
 
-import day26_statics.Iphone;
+
 import day30_inheritanceContinue.phoneTask.IPhone;
 import day30_inheritanceContinue.phoneTask.Nokia;
 import day30_inheritanceContinue.phoneTask.Phone;
 import day30_inheritanceContinue.phoneTask.Samsung;
 
 public class PolymorphismPractice {
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public static void main(String[] args) {
 
 
@@ -68,6 +74,13 @@ public class PolymorphismPractice {
                 }
             }
         }
-    }
 
+
+
+
+
+
+
+
+    }
 }

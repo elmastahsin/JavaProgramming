@@ -30,7 +30,7 @@ Warmup task:
     1. print the model, color and price of each phone object in the following format
     				model - color - price
 
-	2. How many Iphones in the array of phones?
+	2. How many Iphones in the array of phones
 
 	3. How many Samsungs in the array of phones?
 
