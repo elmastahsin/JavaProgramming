@@ -31,6 +31,6 @@ public class ExceptionsIntro {
 
         //  FileInputStream file = new FileInputStream(""); // checked exceptions
 
-        //  Thread.sleep(3000); // checked exceptions
+    //    Thread.sleep(3000); // checked exceptions
     }
 }
