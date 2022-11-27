@@ -9,7 +9,7 @@ public class SetDemo {
     public static void main(String[] args) {
 
 
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>(); // accepst dublicates keeps insertion order , has index
         list.addAll(Arrays.asList(10, 20, 30, 40, 90));
         list.addAll(Arrays.asList(10, 20, 30, 40, 90));
         list.addAll(Arrays.asList(10, 20, 30, 40, 90));
@@ -19,8 +19,8 @@ public class SetDemo {
 
         System.out.println("--------------------------------------------------");
 
-        Set<Integer> set1 = new HashSet<>();
-        set1.addAll(Arrays.asList(10, 20, 30, 40, 90)); // Random Order
+        Set<Integer> set1 = new HashSet<>();// Random Order , accepts null key
+        set1.addAll(Arrays.asList(10, 20, 30, 40, 90));
         set1.addAll(Arrays.asList(10, 200, 130, 240, 290));
         set1.addAll(Arrays.asList(10, 20, 30, 40, 90));
         set1.addAll(Arrays.asList(10, 20, 30, 40, 90));
@@ -31,7 +31,7 @@ public class SetDemo {
 
         System.out.println("--------------------------------------------------");
 
-        Set<Integer> set2 = new LinkedHashSet<>(); // dont accepts duplicates, Keep insertion order
+        Set<Integer> set2 = new LinkedHashSet<>(); // dont accepts duplicates, Keep insertion order, accepts null
 
 
         set2.addAll(Arrays.asList(10, 20, 30, 40, 90)); // Order is like LIFO first entry is head last entry is tail
@@ -74,7 +74,7 @@ public class SetDemo {
 */
         System.out.println(new ArrayList<>(result).get(1));
 
-        words = result.toArray(new String[0]);
+        words = result.toArray(new String[0]); // converting Set to Array
 
         System.out.println("Words Array: " + Arrays.toString(words));
 
@@ -84,7 +84,8 @@ public class SetDemo {
 
         numbers.addAll(Arrays.asList(10,10,10,10,10,10,10,10,10,10,20,22,23,33,33,3,3,3,3,3,3,3,3,3,3,3,3,3,3));
 
-        SortedSet<Integer> n= new TreeSet<>(numbers);
+        SortedSet<Integer> n= new TreeSet<>(numbers);//converting List to Set
+
 
         System.out.println(n);
 
