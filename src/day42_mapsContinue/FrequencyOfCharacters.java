@@ -31,11 +31,5 @@ public class FrequencyOfCharacters {
                 output:
                     {b=2, c=3, a=5}
 
-	2. Write a program that can find the unique characters from a String
-	              Not: MUST use map
-	            Ex:
-	                    str = "aabcccdeeeef";
 
-	            output:
-	                    {b=1, d=1, f=1}
 */
