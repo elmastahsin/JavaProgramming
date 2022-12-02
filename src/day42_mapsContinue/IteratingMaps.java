@@ -30,6 +30,7 @@ public class IteratingMaps {
 
 
         System.out.println("---------------------------------------");
+        // Iterating the map by the values
 
 
         for (Integer eachValue : map.values()) {
@@ -46,9 +47,16 @@ public class IteratingMaps {
         }
 
 
-
         System.out.println("---------------------------------------");
 
+
+        for (Map.Entry<String, Integer> eachEntry : map.entrySet()) {
+            String eachKey = eachEntry.getKey();
+            Integer eachValue = eachEntry.getValue();
+            eachEntry.setValue(eachValue + 1000);
+          //  System.out.println(eachKey + " : " + eachValue);
+        }
+        System.out.println(map);
 
     }
 
