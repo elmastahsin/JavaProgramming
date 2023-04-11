@@ -7,7 +7,7 @@ public class FormatFullName {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your first name :");
         String firstName = input.nextLine().trim().replace(" ", "");
-        // trim(0 & replace() methods will make sure that the white spaces & additionals spaces between the characters will be removed
+        // trim(0 & replace() methods will make sure that the white spaces & additional spaces between the characters will be removed
         System.out.println("Enter your last name :");
         String lastName = input.nextLine().trim().replace(" ", "");
         input.close();

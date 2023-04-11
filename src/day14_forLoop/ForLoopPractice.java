@@ -6,7 +6,7 @@ public class ForLoopPractice {
             System.out.println(i + " *");
         }
         for (int i = 10; i >= 5; i--) {
-            System.out.println("Hello Cydeo");
+            System.out.println("Hello METU");
         }
 
         System.out.println("*************************");
@@ -32,7 +32,7 @@ public class ForLoopPractice {
         }
         System.out.println();
 
-        System.out.println("Cydeo");
+        System.out.println("METU");
 
 
     }

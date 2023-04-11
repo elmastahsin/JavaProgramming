@@ -57,7 +57,7 @@ public class StringMethod2 {
 
         System.out.println("************************");
 
-        String email = "CydeoSchoolJavaProgramming@yahoo.com";
+        String email = "METUSchoolJavaProgramming@yahoo.com";
 
         String domain = email.substring(email.indexOf('@')+1,email.lastIndexOf('.'));
         System.out.println("domain = " + domain);

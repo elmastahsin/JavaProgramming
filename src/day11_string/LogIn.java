@@ -10,7 +10,7 @@ public class LogIn {
         System.out.println("Enter password: ");
         String password = input.next();
         input.close();
-        boolean validCredentials = (userName.equals("Cydeo") && password.equals("WoodenSpoon"));
+        boolean validCredentials = (userName.equals("METU") && password.equals("WoodenSpoon"));
 
         if (validCredentials) {
             System.out.println("You are now logged in");
@@ -27,5 +27,5 @@ public class LogIn {
 				otherwise print the error message "Incorrect username or password. Please try again"
 
 			Note: Assume that the valid credentials are:
-						username: Cydeo
+						username: METU
 						password: WoodenSpoon*/

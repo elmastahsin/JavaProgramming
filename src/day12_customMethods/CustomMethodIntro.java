@@ -19,9 +19,9 @@ public class CustomMethodIntro {
     }
 
     public static void greetings() {
-        System.out.println("Hello Cydeo!");
+        System.out.println("Hello METU!");
         System.out.println("How are you today?");
-        System.out.println("Are you reasy to learn Java?");
+        System.out.println("Are you ready to learn Java?");
     }
 
     public static void displayMessage() {

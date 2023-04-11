@@ -13,10 +13,10 @@ public class StringMethod3 {
 
         System.out.println("********************");
 
-        String str1= "Cydeo";
+        String str1= "METU";
 
-        String str2 = new String ( "Cydeo");
-        String str3 = new String ( "cydeo");
+        String str2 = new String ( "METU");
+        String str3 = new String ( "METU");
 
         System.out.println(str1.equals(str2));
         System.out.println(str2.equals(str3));
@@ -57,7 +57,7 @@ public class StringMethod3 {
 
         System.out.println(l);
 
-        String url = "www.cydeo.com";
+        String url = "www.METU.com";
 
         boolean isValid = url.startsWith("www.");
 
@@ -70,7 +70,7 @@ public class StringMethod3 {
 
         //------------------------------------------------
 
-        String email = "CydeoSchool@gmail.com";
+        String email = "METUSchool@gmail.com";
 
         boolean isGmail = email.endsWith("gmail.com");
 

@@ -27,7 +27,7 @@ public class DigitLetterSpecialChar {
     }
 }
 /*
-* 3. Create a class named DigitLetterSpecialChar and wirte a program that can ask the user to enter a word
+* 3. Create a class named DigitLetterSpecialChar and write a program that can ask the user to enter a word
 	        - if the word starts with digits, print "first character is digit"
 	        - if the word starts with uppercase letters, print "first character is lowercase letter"
 	        - if the word starts with lowercase letters, print "first character is uppercase letter"

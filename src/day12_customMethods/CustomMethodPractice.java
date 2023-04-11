@@ -8,7 +8,7 @@ public class CustomMethodPractice {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your age: ");
         int age = input.nextInt();
-        eligiblToBuyAlcohol(age);
+        eligibleToBuyAlcohol(age);
 
         System.out.println("Enter number :");
         int number = input.nextInt();
@@ -32,7 +32,7 @@ public class CustomMethodPractice {
     }
 
     // create a method that can check if a person is eligible to buy alcohol  (age)
-    public static void eligiblToBuyAlcohol(int age) {
+    public static void eligibleToBuyAlcohol(int age) {
         if (age >= 21 && age <= 150) {
             System.out.println("Eligible to buy alcohol");
         } else {
