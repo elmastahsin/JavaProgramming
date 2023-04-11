@@ -21,7 +21,7 @@ public class ThrowsKeyword2 {
     public static void method1() throws InterruptedException {
         System.out.println("Hello World");
         pause5Seconds();
-        System.out.println("Hello Cydeo");
+        System.out.println("Hello METU");
     }
     public static void method2() throws InterruptedException,FileNotFoundException {
         System.out.println("First Program started");
