@@ -47,7 +47,7 @@ Constructor Calls:
 		1. Constructors can not be called by its name ( this() need to be used)
 		2. Only a constructor can call another constructor
 		3. Constructor call MUST be at the first step
-		4. One constructir can not call more than one constructor
+		4. One constructor can not call more than one constructor
 		5. Constructor can not call or contain itself
 
 

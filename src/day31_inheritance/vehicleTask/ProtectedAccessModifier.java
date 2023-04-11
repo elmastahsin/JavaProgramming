@@ -1,4 +1,4 @@
-package day31_inheritance;
+package day31_inheritance.vehicleTask;
 
 public class ProtectedAccessModifier {
 

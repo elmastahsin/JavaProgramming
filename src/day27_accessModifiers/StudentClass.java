@@ -16,7 +16,7 @@ public class StudentClass {
     }
 
     static {
-        schoolName = "Cydeo School";
+        schoolName = "METU School";
         secretCode = "Wooden Spoon";
     }
 
