@@ -1,10 +1,10 @@
 package day01_introToProgramming;
 
-public class HelloCydeo {
+public class HelloMETU {
     public static void main(String[] args) {
-        System.out.println("Hello Cydeo");
+        System.out.println("Hello METU");
         System.out.println();
-        System.out.println("My name is Tyson");
+        System.out.println("My name is Tahsin");
 
     }
 }
