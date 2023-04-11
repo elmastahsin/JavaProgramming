@@ -2,15 +2,8 @@ package day32_finalKeyword;
 
 import java.time.LocalDate;
 
-class CydeoStudent {
-    public final void language() {
-        System.out.println("Java Programming");
-    }
 
-}
-
-
-public class FinalKeyword extends CydeoStudent {
+public class FinalKeyword extends METUStudent {
     /*@Override
     public void language() { // final method can never be overridden
         System.out.println("Pyhton Programming");
@@ -37,7 +30,7 @@ public class FinalKeyword extends CydeoStudent {
 
         System.out.println(dateOfBirth);
 
-        new CydeoStudent().language();
+        new METUStudent().language();
         new FinalKeyword().language();
 
 

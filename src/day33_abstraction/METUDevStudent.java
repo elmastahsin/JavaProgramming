@@ -4,7 +4,7 @@ import day32_finalKeyword.personTask.Person;
 
 import java.time.LocalDate;
 
-public class CydeoDevStudent extends Person {
+public class METUDevStudent extends Person {
 
     private final String id;
     private String batchName;
@@ -15,10 +15,10 @@ public class CydeoDevStudent extends Person {
         programmingLanguage = "Java";
     }
 
-    public CydeoDevStudent(String name, char gender, LocalDate dateOfBirth, String id, String batchName, int batchNumber) {
+    public METUDevStudent(String name, char gender, LocalDate dateOfBirth, String id, String batchName, int batchNumber) {
         super(name, gender, dateOfBirth);
         if (getAge() < 18) {
-            System.err.println("Cydeo Developer student must be at leats 18 years old");
+            System.err.println("METU Developer student must be at least 18 years old");
             System.exit(1);
         }
         this.id = id;
@@ -36,7 +36,7 @@ public class CydeoDevStudent extends Person {
 
     public void setBatchName(String batchName) {
         if (!(batchName.equalsIgnoreCase("Alumni Dev") || batchName.equalsIgnoreCase("Zero to Hero"))) {
-            System.err.println("Invalid batch name: " + batchName + " \n no such a batch in Cydeo");
+            System.err.println("Invalid batch name: " + batchName + " \n no such a batch in METU");
             System.exit(1);
         }
         this.batchName = batchName;
@@ -74,7 +74,7 @@ public class CydeoDevStudent extends Person {
 
     @Override
     public String toString() {
-        return "CydeoDevStudent{" +
+        return "METUDevStudent{" +
                 "name='" + getName() + '\'' +
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
@@ -85,7 +85,7 @@ public class CydeoDevStudent extends Person {
                 '}';
     }
 }
-/*1. Create a sub class of Person (from day32 package) named CydeoDevStudent (final)
+/*1. Create a sub class of Person (from day32 package) named METUDevStudent (final)
 			Extra Variables:
 				id (final), batchName, batchNumber, programmingLanguage(static & final)
 

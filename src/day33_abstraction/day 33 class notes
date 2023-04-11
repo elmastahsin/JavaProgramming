@@ -7,7 +7,7 @@ Topics: OOP Abstraction
 Package name: day33_abstraction
 
 Warmup tasks:
-	1. Create a sub class of Person (from day32 package) named CydeoDevStudent (final)
+	1. Create a sub class of Person (from day32 package) named METUDevStudent (final)
 			Extra Variables:
 				id (final), batchName, batchNumber, programmingLanguage(static & final)
 

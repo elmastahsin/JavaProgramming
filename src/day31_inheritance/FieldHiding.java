@@ -1,4 +1,4 @@
-package day31_inheritance.vehicleTask;
+package day31_inheritance;
 
 public class FieldHiding extends A {
      public int a =200;
