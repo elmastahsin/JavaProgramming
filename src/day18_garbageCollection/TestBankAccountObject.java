@@ -3,7 +3,7 @@ package day18_garbageCollection;
 public class TestBankAccountObject {
     public static void main(String[] args) {
         BankAccount obj1 = new BankAccount();
-        obj1.setInfo("Gadir", 123456789);
+        obj1.setInfo("Mike", 123456789);
 
         System.out.println(obj1);
 

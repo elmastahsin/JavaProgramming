@@ -22,7 +22,7 @@ public class GarbageCollection {
         System.out.println("-------------------------------------------");
 
         String str1 = "Python";
-        str1 = "CYDEO";
+        str1 = "METU";
 
         System.out.println(str1);
 

@@ -2,15 +2,6 @@ package day18_garbageCollection;
 
 import day17_customClass.Employee;
 
-class Car{
-
-    public String brand;
-    public String model;
-    public String color;
-    public int year;
-
-}
-
 
 public class MemoryAllocation {
 

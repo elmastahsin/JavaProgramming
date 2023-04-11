@@ -2,7 +2,7 @@ package day15_whileLoop;
 
 import java.util.Scanner;
 
-public class Husrew {
+public class Test {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

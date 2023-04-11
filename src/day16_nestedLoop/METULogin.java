@@ -2,7 +2,7 @@ package day16_nestedLoop;
 
 import java.util.Scanner;
 
-public class CydeoLogin {
+public class METULogin {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your username : ");
@@ -10,7 +10,7 @@ public class CydeoLogin {
         System.out.println("Enter your password: ");
         String password = input.next();
 
-        if (userName.equals("Cydeo") && password.equals("WoodenSpoon")) {
+        if (userName.equals("METU") && password.equals("WoodenSpoon")) {
             System.out.println("Logged in.");
         } else {
             for (int i = 1; i <= 3; i++) {
@@ -26,19 +26,19 @@ public class CydeoLogin {
                 userName = input.next();
                 System.out.println("Enter your password: ");
                 password = input.next();
-                if (userName.equals("Cydeo") && password.equals("WoodenSpoon")) {
+                if (userName.equals("METU") && password.equals("WoodenSpoon")) {
                     System.out.println("Logged in.");
                     break;
                 }
             }
-            if (!(userName.equals("Cydeo") && password.equals("WoodenSpoon"))) {
+            if (!(userName.equals("METU") && password.equals("WoodenSpoon"))) {
                 System.out.println("Your account is locked. Please try later.");
             }
         }
     }
-    public static void cydeoLogin (String userName , String password){
+    public static void METULogin (String userName , String password){
 
-        if (userName.equals("Cydeo") && password.equals("WoodenSpoon")) {
+        if (userName.equals("METU") && password.equals("WoodenSpoon")) {
             System.out.println("Logged in.");
         }else {
             System.out.println("Invalid credentials.");
@@ -46,8 +46,8 @@ public class CydeoLogin {
     }
 }
 /*
-* 1. Create a class named CydeoLogIn. you are writing a code for the log-in function of the Cydeo Application, assume that your credentials are:
-                    username: Cydeo
+* 1. Create a class named METULogIn. you are writing a code for the log-in function of the METU Application, assume that your credentials are:
+                    username: METU
                     password: WoodenSpoon
 
         Ask the user to enter their credentials.
