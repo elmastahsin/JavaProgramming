@@ -12,7 +12,7 @@ public class RemovePalindromes {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.addAll(
-                Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
+                Arrays.asList("Java", "Python", "METU", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
         );
         Iterator<String> it = names.iterator();
 
@@ -35,7 +35,7 @@ public class RemovePalindromes {
 
         List<String> names2 = new ArrayList<>();
         names2.addAll(
-                Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
+                Arrays.asList("Java", "Python", "METU", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
         );
         names2.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
         System.out.println(names2);
