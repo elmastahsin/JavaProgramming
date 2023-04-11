@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StringMethod1 {
     public static void main(String[] args) {
 
-        String str = "Cydeo";
+        String str = "ELMAS";
         // index      01234
 
         char firstChar = str.charAt(0);
@@ -43,8 +43,8 @@ public class StringMethod1 {
 
         System.out.println("******************");
 
-        String name1 = "Umran";
-        String name2 = new String("Umran");
+        String name1 = "Mike";
+        String name2 = new String("Mike");
 
         System.out.println(name1 == name2);
         System.out.println(name1.equals(name2));
