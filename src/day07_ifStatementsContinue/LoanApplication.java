@@ -7,7 +7,7 @@ public class LoanApplication {
         String result = "";
 
         if (salary >= 45000 && creditScore >= 700) {
-            result = "You are Eligibile for loan";
+            result = "You are Eligible for loan";
         } else {
             result = "You are NOT Eligible for loan";
         }

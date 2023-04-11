@@ -15,7 +15,7 @@ public class SalaryCalculator {
         double netIncome = salaryBeforeTax - totalTax;
 
         System.out.println("Gross pay is :  $" + salaryBeforeTax);
-        System.out.println("\tFederal tasx is: $" + federalTax);
+        System.out.println("\tFederal tax is: $" + federalTax);
         System.out.println("\tState tax is: $" + stateTax);
         System.out.println("\tTotal tax is: $" + totalTax);
         System.out.println("\tNet income is: $" + netIncome);

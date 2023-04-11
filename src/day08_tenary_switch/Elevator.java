@@ -11,7 +11,7 @@ public class Elevator {
             } else if (floorNumber == 2) {
                 result = " Floor 2 selected. Companies: Cydeo, NASA, Intelsat";
             } else {
-                result = "Floor 3 selected. Companies: Lyft BofA, Stakehouse";
+                result = "Floor 3 selected. Companies: Lyft BofA, Steakhouse";
             }
 
         } else {

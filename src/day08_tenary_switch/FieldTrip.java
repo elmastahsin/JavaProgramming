@@ -9,7 +9,7 @@ public class FieldTrip {
         int numOfGroups = 0;
         if (validGrade) {
             if (grade == 1) {
-                location = "Apple Orchad";
+                location = "Apple Orchard";
                 numOfGroups = 3;
                 teacherInCharge = " Ms.Smith";
             } else if (grade == 2) {

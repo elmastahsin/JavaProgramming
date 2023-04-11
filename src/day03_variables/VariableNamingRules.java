@@ -26,7 +26,7 @@ public class VariableNamingRules {
 
         //gender is male
         String gender = "Male";
-        String fullName = "Tyson Diamond";
+        String fullName = "Tahsin Elmas";
 
 
 
