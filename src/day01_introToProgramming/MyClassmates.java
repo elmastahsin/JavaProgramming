@@ -2,9 +2,9 @@ package day01_introToProgramming;
 
 public class MyClassmates {
     public static void main(String[] args) {
-        System.out.println("Adam");
+        System.out.println("Ali");
         System.out.println();
-        System.out.println("August");
+        System.out.println("Veli");
         System.out.println();
         System.out.println("Brooks");
         System.out.println();
