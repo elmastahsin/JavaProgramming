@@ -5,6 +5,8 @@ public class HelloMETU {
         System.out.println("Hello METU");
         System.out.println();
         System.out.println("My name is Tahsin");
+        System.out.println();
+
 
     }
 }
