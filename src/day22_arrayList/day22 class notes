@@ -5,17 +5,14 @@ Topics: Wrapper Classes
 
 package name: day22_arrayList
 
-warmup tasks
-	1. Go to url: https://login.cydeo.com/
-			1.1 Sign in to the dashboard app by using your my.cydeo.com account
-			1.2 Click the Github JDB Organization App on the dashboard
+
 
 	2. Write a program that can find the minimum and maximum numbers from a two dimensional array of integers
 		Ex:
 			array = { {100, 20, 300}, {10, 1000, 50}, {-200, 400, 0} };
 
 			output:
-				Minimum numbe r is: -200
+				Minimum number is: -200
 				Maximum number is: 1000
 
 
